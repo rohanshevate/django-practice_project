@@ -9,5 +9,8 @@
 {% for task in tasks %}
 <div>
   <p>{{task}}</p>
+  
+  <a href="{% url 'delete' task.pk %}">Delete task</a>
+  
 </div>
 {% endfor %}
